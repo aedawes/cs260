@@ -1,0 +1,43 @@
+body {
+    color: #9197a1;
+    background-color: #090b12;
+  }
+
+#navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: inline;
+    color: #fff;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Impact, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+p, ul, ol, a {
+    font-family: sans-serif;
+    color: #9197a1
+}
+
+ul{
+    list-style-type: circle;
+}
+
+div {
+    background-color: #2f3847;
+
+    width: 500px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}

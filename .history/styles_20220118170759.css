@@ -5,11 +5,8 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #cfb2b2;
+    background-color: ##2f354a;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 #home {
@@ -19,7 +16,7 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: #2f3847;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -34,7 +31,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #2f3847;
+    background-color: #04AA6D;
     color: white;
 }
 
@@ -44,7 +41,7 @@ body {
 }
 
 h1 {
-    padding-top: 50px;
+    
     font-size: 36px;
     font-family: Impact, sans-serif;
     text-align: center;
