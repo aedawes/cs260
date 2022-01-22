@@ -1,0 +1,121 @@
+body {
+    color: #9197a1;
+    background-color: #090b12;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #cfb2b2;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#home {
+    float: left;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #2f3847;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #2f3847;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 36px;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    display: block;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+p, ul, ol, a {
+    font-family: sans-serif;
+    color: #9197a1
+}
+
+.about {
+    background-color: #2f3847;
+
+    width: 500px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.projects {
+    background-color: #2f3847;
+
+    width: 500px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.experience {
+    background-color: #2f3847;
+
+    width: 500px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.contact {
+    background-color: #2f3847;
+
+    width: 500px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.projects li {
+    padding: 10px;
+}
+
+.experience li {
+    padding: 10px;
+}
+
+.contact li {
+    padding: 10px;
+}

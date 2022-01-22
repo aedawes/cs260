@@ -43,10 +43,6 @@ body {
     .topnav .icon {
         display: none;
     }
-
-    #title {
-        padding-top: 75px;
-    }
 }
 
 @media only screen and (max-device-width: 400px) {

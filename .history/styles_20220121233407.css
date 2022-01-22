@@ -1,9 +1,25 @@
-body {
-    color: #9197a1;
-    background-color: #090b12;
+
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+}
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
+    }
+}
+  
+  /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+      background-color: #B2D6FF; /* Blue */
+    }
 }
 
-@media only screen and (min-device-width: 401px) {
+@media only screen and (min-width: 401px) {
 /* Add a black background color to the top navigation */
     .topnav {
         background-color: #cfb2b2;
@@ -43,13 +59,9 @@ body {
     .topnav .icon {
         display: none;
     }
-
-    #title {
-        padding-top: 75px;
-    }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 400px) {
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #cfb2b2;

@@ -1,9 +1,9 @@
 body {
     color: #9197a1;
     background-color: #090b12;
-}
+  }
 
-@media only screen and (min-device-width: 401px) {
+@media only screen and (min-width: 961px) {
 /* Add a black background color to the top navigation */
     .topnav {
         background-color: #cfb2b2;
@@ -43,13 +43,9 @@ body {
     .topnav .icon {
         display: none;
     }
-
-    #title {
-        padding-top: 75px;
-    }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 400px) {
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #cfb2b2;
@@ -59,21 +55,9 @@ body {
         width: 100%;
     }
 
-    .menu div{
-        width: 35px;
-        height: 5px;
-        background-color: #2f3847;
-        margin: 6px 0;
-    }
-
-    #theMenu {
-        float: right;
-        padding-right: 20px;
-        padding-top: 3px;
-    }
-
     #home {
         float: left;
+        display: block;
     }
 
     #links {
@@ -81,13 +65,14 @@ body {
     }
     /* Style the links inside the navigation bar */
     .topnav a {
+        float: right;
         color: #2f3847;
-        display: block;
-        /*text-align: center;*/
+        text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
     }
+
     /* Change the color of links on hover */
     .topnav a:hover {
         background-color: #ddd;
@@ -101,12 +86,8 @@ body {
     }
 
     /* Hide the link that should open and close the topnav on small screens */
-    .topnav a.icon {
-        display: block;
-        background: #2f3847;
-        position: absolute;
-        right: 0;
-        top: 0;
+    .topnav .icon {
+        display: none;
     }
 }
 

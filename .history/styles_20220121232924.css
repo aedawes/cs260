@@ -1,10 +1,10 @@
 body {
     color: #9197a1;
     background-color: #090b12;
-}
+  }
 
-@media only screen and (min-device-width: 401px) {
-/* Add a black background color to the top navigation */
+/*@media only screen and (min-width: 401px) {
+/* Add a black background color to the top navigation *
     .topnav {
         background-color: #cfb2b2;
         overflow: hidden;
@@ -16,7 +16,7 @@ body {
     #home {
         float: left;
     }
-    /* Style the links inside the navigation bar */
+    /* Style the links inside the navigation bar *
     .topnav a {
         float: right;
         display: block;
@@ -27,29 +27,25 @@ body {
         font-size: 17px;
     }
 
-    /* Change the color of links on hover */
+    /* Change the color of links on hover *
     .topnav a:hover {
         background-color: #ddd;
         color: black;
     }
 
-    /* Add an active class to highlight the current page */
+    /* Add an active class to highlight the current page *
     .topnav a.active {
         background-color: #2f3847;
         color: white;
     }
 
-    /* Hide the link that should open and close the topnav on small screens */
+    /* Hide the link that should open and close the topnav on small screens *
     .topnav .icon {
         display: none;
     }
+}*/
 
-    #title {
-        padding-top: 75px;
-    }
-}
-
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 400px) {
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #cfb2b2;
