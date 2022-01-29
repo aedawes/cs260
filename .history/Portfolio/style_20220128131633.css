@@ -1,0 +1,34 @@
+:root{
+    --primary: #404151; /* main background blue */
+    --primary-text: #C6AFB2; /* Light pink text */
+
+    --secondary: #9C8B8D; /* Medium pink fill */
+    --secondary-text: #656779; /* Light blue text */
+}
+
+/* Overall -----------------------------------------*/
+
+body {
+    background-color: var(--primary);
+}
+
+/* navigation bar ----------------------------------*/
+.bg-custom{
+    background-color: var(--primary) !important;
+    color: var(--primary-text);
+}
+
+.navbar-brand {
+    height: 64px;
+    width: 68px;
+}
+
+.navbar.navbar-7 .navbar-toggler-icon {
+    width: 75px;
+    background-image: url('./MenuIcon.png');
+}
+
+/* Main Image --------------------------------------*/
+#mainImg {
+    height: 800px;
+}

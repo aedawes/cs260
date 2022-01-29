@@ -1,0 +1,18 @@
+:root{
+    --primary: #404151;
+    --primary-text: #4a332d;
+    --secondary: #d0c7c2;
+    --secondary-text: #251814;
+}
+
+/* Overall -----------------------------------------*/
+
+body {
+    background-color: #404151;
+}
+
+/* navigation bar ----------------------------------*/
+.bg-custom{
+    background-color: var(--secondary) !important;
+    color: var(--primary-text);
+  }

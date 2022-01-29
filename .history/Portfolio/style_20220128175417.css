@@ -1,0 +1,109 @@
+:root{
+    --primary: #404151; /* main background blue */
+    --primary-text: #C6AFB2; /* Light pink text */
+
+    --secondary: #9C8B8D; /* Medium pink fill */
+    --secondary-text: #656779; /* Light blue text */
+}
+
+/* Overall -----------------------------------------*/
+
+body {
+    background-color: var(--primary);
+}
+
+/* navigation bar ----------------------------------*/
+.bg-custom{
+    background-color: var(--primary) !important;
+    color: var(--primary-text);
+}
+
+.navbar-brand {
+    height: 64px;
+    width: 68px;
+}
+
+.navbar.navbar-7 .navbar-toggler-icon {
+    width: 75px;
+    background-image: url('./MenuIcon.png');
+}
+
+/* Main Image --------------------------------------*/
+.mainImg {
+    position: relative;
+    height: 91.5vh;
+    background-image: url('./Smoke.png');
+}
+
+.mainImg img {
+    position: absolute;
+    height: 189px;
+    width: 196px;
+    left: 87.5vh;
+    top: 23vh;
+}
+
+.mainImg h1 {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    width: 424px;
+    height: 100px;
+    top: 425px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75px;
+    line-height: 88px;
+
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--primary), var(--primary-text));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+}
+.circleItem {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.circles {
+    height: 323px;
+    width: 323px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--secondary);
+}
+
+.circleItem h2 {
+
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 59px;
+    color: var(--primary-text);
+}
+
+#picofme {
+    max-width: 100%;
+    max-height: 100%;
+}

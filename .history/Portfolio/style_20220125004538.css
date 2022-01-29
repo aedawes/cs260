@@ -1,0 +1,64 @@
+body {
+    background-color: #1C2541;
+}
+
+nav {
+    position: absolute;
+    width: 1728px;
+    height: 142px;
+    left: 0px;
+    top: 0px;
+}
+
+.topnav {
+    position: absolute;
+    width: 1800px;
+    height: 142px;
+    left: 0px;
+    top: 0px;
+
+    background: #262E47;
+    mix-blend-mode: normal;
+}
+
+#leftName {
+    position: absolute;
+    width: 288px;
+    height: 68px;
+    left: 49px;
+    top: 41px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 68px;
+
+    color: #B0D9D1;
+}
+
+.menu div {
+    position: absolute;
+    right: 1.39%;
+    border: 5px solid #B0D9D1;
+}
+
+#topmenuline {
+    left: 92.48%;
+    top: 4.92%;
+    bottom: 95.08%;
+}
+
+#middlemenuline {
+    left: 94.21%;
+    top: 6.89%;
+    bottom: 93.11%;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(228, 9, 9);
+    border-radius: 50%;
+    display: inline-block;
+  }

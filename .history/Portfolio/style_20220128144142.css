@@ -1,0 +1,68 @@
+:root{
+    --primary: #404151; /* main background blue */
+    --primary-text: #C6AFB2; /* Light pink text */
+
+    --secondary: #9C8B8D; /* Medium pink fill */
+    --secondary-text: #656779; /* Light blue text */
+}
+
+/* Overall -----------------------------------------*/
+
+body {
+    background-color: var(--primary);
+}
+
+/* navigation bar ----------------------------------*/
+.bg-custom{
+    background-color: var(--primary) !important;
+    color: var(--primary-text);
+}
+
+.navbar-brand {
+    height: 64px;
+    width: 68px;
+}
+
+.navbar.navbar-7 .navbar-toggler-icon {
+    width: 75px;
+    background-image: url('./MenuIcon.png');
+}
+
+/* Main Image --------------------------------------*/
+.mainImg {
+    position: relative;
+    height: 91.5vh;
+    background-image: url('./Smoke.png');
+}
+
+.mainImg img {
+    position: absolute;
+    height: 189px;
+    width: 196px;
+    left: 85vh;
+    top: 382px;
+}
+
+.mainImg h1 {
+    position: absolute;
+    width: 420px;
+    height: 88px;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 75px;
+    line-height: 88px;
+}
+
+#here {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: yellowgreen;
+    height: 1000px;
+    width: 10px;
+}
