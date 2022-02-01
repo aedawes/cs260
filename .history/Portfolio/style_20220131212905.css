@@ -1,0 +1,196 @@
+:root{
+    --primary: #393A4A; /* main background blue */
+    --primary-text: #C6AFB2; /* Light pink text */
+
+    --text: #755d60;
+
+    --secondary: #9C8B8D; /* Medium pink fill */
+    --secondary-text: #656779; /* Light blue text */
+}
+
+/* Overall -----------------------------------------*/
+
+body {
+    background-color: var(--primary);
+}
+
+/* navigation bar ----------------------------------*/
+.nav-link {
+    font-size: 30px;
+    text-align: center;
+}
+.bg-custom{
+    background-color: var(--primary)!important;
+    color: var(--primary-text);
+}
+
+.navbar-brand {
+    height: 64px;
+    width: 68px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-text);
+}
+
+.navbar-light .navbar-nav .active .nav-link{
+    color: var(--secondary-text);
+}
+
+.navbar.navbar-7 .navbar-toggler-icon {
+    width: 75px;
+    background-image: url('./images/MenuIcon.png');
+}
+
+/* Main Image --------------------------------------*/
+.mainImg {
+    position: relative;
+    height: 91.5vh;
+    background-image: url('./images/Smoke.png');
+}
+
+.mainImg img {
+    position: absolute;
+    height: 189px;
+    width: 196px;
+    left: 87.5vh;
+    top: 23vh;
+}
+
+.mainImg h1 {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    width: 424px;
+    height: 100px;
+    top: 425px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75px;
+    line-height: 88px;
+
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--primary), var(--primary-text));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+}
+.circleItem {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.circles {
+    height: 323px;
+    width: 323px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--secondary);
+}
+
+.circleItem h2 {
+
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 59px;
+    color: var(--primary-text);
+}
+
+#picofme {
+    background-image: url(./images/PicOfMe.jpg);
+    background-position: center;
+    background-size: 350px;
+}
+
+#PortfolioPic {
+    background-image: url(./images/PortfolioImg.jpg);
+    background-position: left;
+    background-size: 550px;
+}
+
+#contactme {
+    background-image: url(./images/ContactImg.png);
+    background-position: center;
+    background-size: 900px;
+}
+
+/* About -----------------------------------------*/
+#gradient {
+    height: 850px;
+    width: 1920px;
+    background-image: linear-gradient(to bottom right, #282838, #6a6d8d);
+}
+
+#aboutMe {
+    float: left;
+    display: block;
+    max-height: 400px;
+    max-width: 600px;
+    margin-left: 224px;
+    margin-top: 200px;
+
+    height: 430px;
+    width: 430px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--secondary);
+}
+
+.thisIsMe {
+    float: left;
+    color: var(--text);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 750px;
+    height: 400px;
+}
+
+/* Portfolio grid */
+.grid-container {
+    background-image: linear-gradient(to bottom, #282838, #806265);
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    border: 1px solid #fff;
+    width: 700px;
+    height: 300px;
+    margin: 50px;
+}
+
+.grid-item.One{
+    margin-top: 100px;
+    color: var(--primary-text);
+}
