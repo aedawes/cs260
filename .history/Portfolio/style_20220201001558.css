@@ -17,112 +17,15 @@ body {
 /*responsive ---------------------------------------*/
 
 @media only screen and (max-device-width: 500px){
-    .nav-item{
-        font-size: 75px;
-    }
-
-    .navbar {
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
-    }
-
-    .navbar-toggler-icon {
-        border-top: 2rem;
-    }
-
     .mainImg img {
         left: 400px;
         top: 15vh;
-    }
-
-    .mainImg h1 {
-        padding-top: 300px;
-        color:rgb(170, 143, 146);
-    }
-
-    .circle {
-        height: 1000px;
-        margin-top: 100px;
-    }
-    .circleItem.Three {
-        margin: 0px;
-    }
-
-    .footer{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    #gradient {
-        height: 3000px;
-    }
-
-    #aboutMe {
-        margin-left: 275px;
-    }
-
-    .thisIsMe {
-        text-align: center;
-        margin-left: 125px;
-        margin-top: 75px;
-        font-size: 40px;
-        height: 2100px;
-    }
-
-    .thisIsMe h1{
-        font-size: 50px;
-        padding-bottom: 50px;
-    }
-
-    .gradient2 {
-        height: 90vh;
-    }
-
-    #email, #phone {
-        font-size: 50px;
-        padding-top: 100px;
-    }
-
-    #p1, #p2 {
-        font-size: 40px;
     }
 }
 @media only screen and (min-device-width: 501px){
     .mainImg img {
         left: 90vh;
         top: 23vh;
-    }
-
-    .mainImg h1 {
-        padding-top: 200px;
-        background-image: linear-gradient(to bottom, var(--primary), rgb(185, 163, 163));
-    }
-
-    .circle {
-        height: 100vh;
-    }
-
-    #gradient {
-        height: 850px;
-        width: 1920px;
-    }
-
-    #aboutMe {
-        margin-left: 224px;
-    }
-
-    .thisIsMe {
-        margin-left: 200px;
-        margin-top: 200px;
-        height: 400px;
-    }
-
-    #email, #phone {
-        font-size: 30px;
-    }
-
-    #p1, #p2 {
-        font-size: 30px;
     }
 }
 
@@ -177,7 +80,7 @@ body {
 /* Main Image --------------------------------------*/
 .mainImg {
     position: relative;
-    height: 850px;
+    height: 91.5vh;
     background-image: url('./images/Smoke.png');
 }
 
@@ -185,7 +88,7 @@ body {
     position: absolute;
     margin-right: auto;
     height: 189px;
-    width: 196px;
+    left: 90vh;
     right: 0px;
     bottom: 0px;
 }
@@ -195,6 +98,7 @@ body {
     position: absolute;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 200px;
     width: 424px;
     top: 200px;
     left: 0px;
@@ -208,6 +112,7 @@ body {
     line-height: 88px;
 
     background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--primary), rgb(185, 163, 163));
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -221,6 +126,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    height: 100vh;
 }
 .circleItem {
     margin-top: auto;
@@ -268,6 +174,8 @@ body {
 
 /* About -----------------------------------------*/
 #gradient {
+    height: 850px;
+    width: 1920px;
     background-image: linear-gradient(to bottom right, #282838, #6a6d8d);
 }
 
@@ -276,6 +184,7 @@ body {
     display: block;
     max-height: 400px;
     max-width: 600px;
+    margin-left: 224px;
     margin-top: 200px;
 
     height: 430px;
@@ -295,7 +204,10 @@ body {
     color: var(--text);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: block;
+    margin-top: 200px;
+    margin-left: 200px;
     width: 750px;
+    height: 400px;
 }
 
 /* Portfolio grid */
@@ -391,6 +303,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    font-size: 30px;
     line-height: 88px;
 
     color: rgb(121, 95, 95);
@@ -403,6 +316,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    font-size: 30px;
     color: rgb(121, 95, 95);
 }
 

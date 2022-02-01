@@ -42,49 +42,10 @@ body {
 
     .circle {
         height: 1000px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .circleItem.Three {
         margin: 0px;
-    }
-
-    .footer{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    #gradient {
-        height: 3000px;
-    }
-
-    #aboutMe {
-        margin-left: 275px;
-    }
-
-    .thisIsMe {
-        text-align: center;
-        margin-left: 125px;
-        margin-top: 75px;
-        font-size: 40px;
-        height: 2100px;
-    }
-
-    .thisIsMe h1{
-        font-size: 50px;
-        padding-bottom: 50px;
-    }
-
-    .gradient2 {
-        height: 90vh;
-    }
-
-    #email, #phone {
-        font-size: 50px;
-        padding-top: 100px;
-    }
-
-    #p1, #p2 {
-        font-size: 40px;
     }
 }
 @media only screen and (min-device-width: 501px){
@@ -100,29 +61,6 @@ body {
 
     .circle {
         height: 100vh;
-    }
-
-    #gradient {
-        height: 850px;
-        width: 1920px;
-    }
-
-    #aboutMe {
-        margin-left: 224px;
-    }
-
-    .thisIsMe {
-        margin-left: 200px;
-        margin-top: 200px;
-        height: 400px;
-    }
-
-    #email, #phone {
-        font-size: 30px;
-    }
-
-    #p1, #p2 {
-        font-size: 30px;
     }
 }
 
@@ -268,6 +206,8 @@ body {
 
 /* About -----------------------------------------*/
 #gradient {
+    height: 850px;
+    width: 1920px;
     background-image: linear-gradient(to bottom right, #282838, #6a6d8d);
 }
 
@@ -276,6 +216,7 @@ body {
     display: block;
     max-height: 400px;
     max-width: 600px;
+    margin-left: 224px;
     margin-top: 200px;
 
     height: 430px;
@@ -295,7 +236,10 @@ body {
     color: var(--text);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: block;
+    margin-top: 200px;
+    margin-left: 200px;
     width: 750px;
+    height: 400px;
 }
 
 /* Portfolio grid */
@@ -391,6 +335,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    font-size: 30px;
     line-height: 88px;
 
     color: rgb(121, 95, 95);
@@ -403,6 +348,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    font-size: 30px;
     color: rgb(121, 95, 95);
 }
 

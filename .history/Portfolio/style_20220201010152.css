@@ -75,16 +75,12 @@ body {
     }
 
     .gradient2 {
-        height: 90vh;
+        height: 100vh;
     }
 
     #email, #phone {
         font-size: 50px;
-        padding-top: 100px;
-    }
-
-    #p1, #p2 {
-        font-size: 40px;
+        padding-top: 100pxl
     }
 }
 @media only screen and (min-device-width: 501px){
@@ -118,10 +114,6 @@ body {
     }
 
     #email, #phone {
-        font-size: 30px;
-    }
-
-    #p1, #p2 {
         font-size: 30px;
     }
 }
@@ -403,6 +395,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    font-size: 30px;
     color: rgb(121, 95, 95);
 }
 
