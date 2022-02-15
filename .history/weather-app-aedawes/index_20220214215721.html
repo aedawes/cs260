@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Weather App</h1>
+  </div>
+
+  <div class="theForm">
+    <form onsubmit="current(event)">
+      <label for="weatherInput">Enter a U.S. City</label>
+      <input id="weatherInput" type="text" placeholder="Search..."></input><br/>
+      <input id="weatherSubmit" type="submit" value="Submit"></input>
+    </form>
+  </div>
+
+
+  <div class="currentWeather">
+    <div id="weatherResults"></div>
+  </div>
+  
+  <div id="forecastResults"></div>
+  <div id="radiationResults"></div>
+
+  <div class="footer">
+    <hr/>
+    <p> Link to my github:
+    <a target="_blank" href="https://github.com/aedawes/cs260.git"> My github Link</a>
+    </p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="/script.js">
+  </script>
+</body>
+</html>

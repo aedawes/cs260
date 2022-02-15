@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(38, 36, 58);
+    color: white;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(25, 24, 37);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.theForm{
+    position: fixed;
+    top: 150px;
+}
+
+.theForm label{
+    margin-bottom: 100px;
+}
+
+#weatherInput {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    padding-left: 8px;
+}

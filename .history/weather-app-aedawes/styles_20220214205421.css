@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(38, 36, 58);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(25, 24, 37);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.theForm{
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.theForm label {
+    display:block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#weatherInput {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    padding-left: 8px;
+}
+
+#weatherSubmit {
+    width: 30%;
+    background-color: #6f6f86;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
