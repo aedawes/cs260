@@ -164,7 +164,7 @@ h2{
 }
 
 .item.rgbToHex h3, form{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .item.hexToRgb h3{
@@ -172,7 +172,7 @@ h2{
 }
 
 #value {
-    margin-top:16px;
+    margin-top:50px;
 }
 
 /* Footer */

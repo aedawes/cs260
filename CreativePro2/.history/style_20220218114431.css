@@ -54,7 +54,7 @@
     .grid {
         width: 1200px;
     }
-    
+
     #rToH, #hToR{
         height: 300px;
         width: 300px;
@@ -112,7 +112,7 @@ body{
 }
 
 .colour p{
-    margin-top: 250px;
+    margin-top: 50px;
     font-size: 20px;
     color: white;
 }
@@ -172,7 +172,7 @@ h2{
 }
 
 #value {
-    margin-top:16px;
+    margin-top:50px;
 }
 
 /* Footer */

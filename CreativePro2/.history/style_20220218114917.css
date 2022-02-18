@@ -153,7 +153,7 @@ h2{
 }
 
 .item{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     margin-left: 100px;
     margin-right: 100px;
@@ -172,7 +172,7 @@ h2{
 }
 
 #value {
-    margin-top:16px;
+    margin-top:50px;
 }
 
 /* Footer */
