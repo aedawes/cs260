@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="theNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <h1>Colour Palette Generator</h1>
+            </div>
+        </nav>
+        <hr/>
+
+        <!-- Colour Generator -->
+        <div class="generator">
+            <div class="grid">
+                <div class="colour One"></div>
+                <div class="colour Two"></div>
+                <div class="colour Three"></div>
+                <div class="colour Four"></div>
+            </div>
+        </div>
+        <button id="getButton">Generate</button>
+
+        <!--Converter-->
+        <h2> Color Code Converter </h2>
+        <div class="converter">
+            <div class="grid">
+                <div class="item rbgToHex">
+                    <h3>RBG to Hexadecimal</h3>
+                    <form>
+                        <label>Enter an RBG value</label>
+                        <input placeholder="0,0,0" id="rbg"/>
+                    </form>
+                </div>
+                <div class="item hexToRbg">
+                    <h3>Hexadecimal to RBG</h3>
+                    <form>
+                        <label>Enter an hex value</label>
+                        <input placeholder="#12345" id="hex"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <hr/>
+        <p> Link to my github:
+            <a target="_blank" href="https://github.com/aedawes/cs260.git"> My github Link</a>
+        </p>
+        <!-- script -->
+        <script text="type/javascript" src="./script.js"></script>
+    </body>
+</html>

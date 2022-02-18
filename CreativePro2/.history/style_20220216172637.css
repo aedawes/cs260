@@ -1,0 +1,10 @@
+/* navbar */
+nav{
+    background-color: black;
+    color: linear-gradient(to right, pink, rgb(231, 191, 179), rgb(255, 217, 146));
+}
+
+/* Body */
+body{
+    background-color: black;
+}

@@ -1,0 +1,13 @@
+/* navbar */
+#howtonav {
+    font-size: 20px;
+}
+
+.bg-custom{
+    background-color: var(--secondary) !important;
+    color: var(--primary-text);
+  }
+
+.navbar-light .navbar-nav .active >.nav-link{
+    color: var(--secondary-text);
+}
