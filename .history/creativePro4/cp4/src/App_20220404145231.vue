@@ -18,7 +18,6 @@
       :absolute="!fixed"
       color="secondary"
       app
-      dark
     >
       <span> Link to my Github: <a target="_blank" href="https://github.com/aedawes/cp3.git">aedawes</a>
       </span>
@@ -44,6 +43,6 @@ export default {
 
   .mainbody{
     background-color: #A1D2CE !important;
-    color: white !important;
+    color: white;
   }
 </style>

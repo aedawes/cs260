@@ -13,16 +13,6 @@
     <v-main>
       <router-view/>
     </v-main>
-
-    <v-footer
-      :absolute="!fixed"
-      color="secondary"
-      app
-      dark
-    >
-      <span> Link to my Github: <a target="_blank" href="https://github.com/aedawes/cp3.git">aedawes</a>
-      </span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -44,6 +34,5 @@ export default {
 
   .mainbody{
     background-color: #A1D2CE !important;
-    color: white !important;
   }
 </style>

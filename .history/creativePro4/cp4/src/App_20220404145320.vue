@@ -10,7 +10,9 @@
       </div>
     </v-app-bar>
 
-    <v-main>
+    <v-main
+    dark
+    >
       <router-view/>
     </v-main>
 

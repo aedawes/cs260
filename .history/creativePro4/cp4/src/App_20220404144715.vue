@@ -1,8 +1,8 @@
 <template>
-  <v-app class="mainbody">
+  <v-app>
     <v-app-bar
       app
-      color="secondary"
+      color="primary"
       dark
     >
       <div class="d-flex align-center">
@@ -13,16 +13,6 @@
     <v-main>
       <router-view/>
     </v-main>
-
-    <v-footer
-      :absolute="!fixed"
-      color="secondary"
-      app
-      dark
-    >
-      <span> Link to my Github: <a target="_blank" href="https://github.com/aedawes/cp3.git">aedawes</a>
-      </span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -40,10 +30,5 @@ export default {
 <style scoped>
   v-app-bar{
     background-color:black !important;
-  }
-
-  .mainbody{
-    background-color: #A1D2CE !important;
-    color: white !important;
   }
 </style>

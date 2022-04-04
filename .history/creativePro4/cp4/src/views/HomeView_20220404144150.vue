@@ -3,7 +3,7 @@
       <div class="behind"></div>
       <v-row justify="center" align="center">
           <v-col cols="12" sm="8" md="6">
-              <v-card dark elevation="5" class="card">
+              <v-card elevation="5" class="card">
                   <v-card-title justify="center" class="title">
                       <h1> Create Your Own Business Card </h1>
                   </v-card-title>
