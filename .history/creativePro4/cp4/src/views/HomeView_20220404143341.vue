@@ -6,7 +6,7 @@
   import HelloWorld from '../components/HelloWorld'
 
   export default {
-    name: 'Home-View',
+    name: 'HomeView',
 
     components: {
       HelloWorld,
