@@ -1,0 +1,184 @@
+<template>
+  <div class="main">
+      <div class="behind"></div>
+      <v-row justify="center" align="center">
+          <v-col cols="10" sm="8" md="6">
+              <div class="grid-container">
+                  <div class="grid">
+                      <div class="item" v-for="item in cards" :key="item.firstname">
+                        <v-card elevation="5" class="card">
+                            <v-list-item>
+                                <v-list-item-avatar size="200" color="grey"> 
+                                    <p id="logo" >{{item.firstname}}{{item.lastname}}</p>
+                                </v-list-item-avatar>
+                                <v-list-item-content class="inside">
+                                    <v-list-item-title>
+                                        <h1 class="title">{{item.firstname}} {{item.lastname}}</h1>
+                                    </v-list-item-title>
+                                    <p> {{item.address}} </p>
+                                    <p> Email: {{item.email}} </p>
+                                    <p> Phone: {{item.phonenumber}} </p>
+                                    <p> Website: {{ item.website }} </p>
+                                    <v-btn @click="deleteCard(item)">Delete</v-btn>
+                                    <v-btn @click="clickedEdit()">Edit</v-btn>
+                                    <v-card v-if="clickedEdit() == true" dark elevation="5" class="card">
+                                        <v-card-title justify="center" class="title">
+                                            <h1>Fill Out Your Card</h1>
+                                        </v-card-title>
+                                        <v-card-text justify="center">
+                                            <label> First Name </label>
+                                            <v-text-field v-model="form.firstname" label="firstname" required />
+                                            <label> Last Name </label>
+                                            <v-text-field v-model="form.lastname" label="lastname" required />
+                                            <label> Email </label>
+                                            <v-text-field v-model="form.email" label="email@foo.com" required />
+                                            <label> Phone </label>
+                                            <v-text-field v-model="form.phonenumber" label="(123)456-7890" required />
+                                            <label> Website </label>
+                                            <v-text-field v-model="form.website" label="www.example.com" required />
+                                            <label> Address </label>
+                                            <v-text-field v-model="form.address" label="123 Peach St" required />
+                                            <v-btn class="button" @click="updateForm(item)">Submit</v-btn>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </v-card>
+                    </div>
+                  </div>
+                </div>
+          </v-col>
+      </v-row>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'cards-list',
+  data () {
+    return {
+        findCard: null,
+        clicked: false,
+        cards: []
+    }
+  },
+  created() {
+    this.getCards();
+  },
+  methods: {
+    async getCards() {
+      try {
+        let response = await axios.get("/api/cards");
+        this.cards = response.data;
+        console.log(this.cards)
+        return true;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async deleteCard(card) {
+        try {
+          this.findCard = card;
+          await axios.delete("/api/cards/" + card._id);
+          this.findCard = null;
+          window.location.reload();
+          return true;
+        } catch (error) {
+          console.log(error);
+        }
+    },
+    async updateForm(card) {
+        try {
+          await axios.put("/api/cards/" + card._id, {
+            firstName: this.findCard.firstName,
+            lastName: this.findCard.lastName,
+            email: this.findCard.email,
+            phoneNumber: this.findCard.phoneNumber,
+            website: this.findCard.website,
+            address: this.findCard.address
+          });
+          this.findCard = null;
+          this.getCards();
+          return true;
+        } catch (error) {
+          console.log(error);
+        }
+    }
+  }
+}
+</script>
+
+<style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;300;400&family=Quicksand:wght@300;400&display=swap');
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .grid{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item{
+        width: 700px;
+        height: 400px;
+    }
+
+  .card{
+    position: absolute;
+    padding: 50px;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    align-items: center;
+  }
+
+    .v-list-item__content {
+        height: 250px;
+        width: 300px;
+    }
+
+  .title {
+      font-size: 40px !important;
+      margin-bottom: 20px;
+      color: black;
+      padding-left: 20px;
+  }
+
+  #circle {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      background-color: gray;
+  }
+
+    .inside {
+        color: black;
+    }
+
+    .inside p {
+        padding-left: 20px;
+    }
+
+  #logo {
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      margin-top: 25px;
+      font-size: 75px;
+      text-align: center;
+  }
+
+    #button {
+        top: 0px;
+        left: 250px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+</style>

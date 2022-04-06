@@ -1,0 +1,131 @@
+<template>
+  <div class="main">
+      <div class="behind"></div>
+      <v-row justify="center" align="center">
+          <v-col cols="10" sm="8" md="6">
+              <div class="grid-container">
+                  <div class="grid">
+                      <div class="item" v-for="item in cards" :key="item.firstname">
+                        <v-card elevation="5" class="card">
+                            <v-list-item>
+                                <v-list-item-avatar size="200" color="grey"> 
+                                    <p id="logo" >{{item.firstname}}{{item.lastname}}</p>
+                                </v-list-item-avatar>
+                                <v-list-item-content class="inside">
+                                    <v-list-item-title>
+                                        <h1 class="title">name {{item.firstname}} {{item.lastname}}</h1>
+                                    </v-list-item-title>
+                                    <p> {{item.address}} </p>
+                                    <p> Email: {{item.email}} </p>
+                                    <p> Phone: {{item.phonenumber}} </p>
+                                    <p> Website: {{ item.website }} </p>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </v-card>
+                    </div>
+                  </div>
+                </div>
+          </v-col>
+      </v-row>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'cards-list',
+  data () {
+    return {
+      cards: []
+    }
+  },
+  created() {
+    this.getCards();
+  },
+  methods: {
+    async getCards() {
+      try {
+        let response = await axios.get("/api/cards");
+        this.cards = response.data;
+        return true;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  }
+}
+</script>
+
+<style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;300;400&family=Quicksand:wght@300;400&display=swap');
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .grid{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item{
+        width: 700px;
+        height: 400px;
+    }
+
+  .card{
+    position: absolute;
+    padding: 50px;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    align-items: center;
+  }
+
+    .v-list-item__content {
+        height: 250px;
+        width: 300px;
+    }
+
+  .title {
+      font-size: 40px !important;
+      margin-bottom: 20px;
+      color: black;
+      padding-left: 20px;
+  }
+
+  #circle {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      background-color: gray;
+  }
+
+    .inside {
+        color: black;
+    }
+
+    .inside p {
+        padding-left: 20px;
+    }
+
+  #logo {
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      margin-top: 25px;
+      font-size: 75px;
+      text-align: center;
+  }
+
+    #button {
+        top: 0px;
+        left: 250px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+</style>

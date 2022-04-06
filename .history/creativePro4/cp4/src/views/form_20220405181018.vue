@@ -1,0 +1,83 @@
+<template>
+  <div class="main">
+      <div class="behind"></div>
+      <v-row justify="center" align="center">
+          <v-col cols="12" sm="8" md="6">
+              <v-card dark elevation="5" class="card">
+                  <v-card-title justify="center" class="title">
+                      <h1>Fill Out Your Card</h1>
+                  </v-card-title>
+                  <v-card-text justify="center">
+                    <label> First Name </label>
+                    <v-text-field v-model="form.firstName" label="firstname" required />
+                    <label> Last Name </label>
+                    <v-text-field v-model="form.lastName" label="lastname" required />
+                    <label> Email </label>
+                    <v-text-field v-model="form.email" label="email@foo.com" required />
+                    <label> Phone </label>
+                    <v-text-field v-model="form.phoneNumber" label="(123)456-7890" required />
+                    <label> Website </label>
+                    <v-text-field v-model="form.website" label="www.site.com" required />
+                    <label> Address </label>
+                    <v-text-field v-model="form.address" label="123 Peach St" required />
+                    <v-btn class="button" @click="updateForm()">Submit</v-btn>
+                  </v-card-text>
+              </v-card>
+          </v-col>
+      </v-row>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'IndexPage',
+  data () {
+    return {
+      form: {
+          firstName: this.findCard.firstName,
+          lastName: this.findCard.lastName,
+          email: this.findCard.email,
+          phoneNumber: this.findCard.phoneNumber,
+          website: this.findCard.website,
+          address: this.findCard.address
+      }
+    }
+  },
+  methods:{
+    async updateForm() {
+      try {
+        console.log("here: " + this.form.lastName)
+        let r2 = await axios.post('/api/cards', {
+          firstName: this.form.firstName,
+          lastName: this.form.lastName,
+          email: this.form.email,
+          phoneNumber: this.form.phoneNumber,
+          website: this.form.website,
+          address: this.form.address
+        });
+        this.addItem = r2.data;
+        console.log(r2)
+      } catch (error) {
+        alert("Form did not submit")
+        console.log(error);
+      }
+    },
+  }
+}
+</script>
+
+<style scoped>
+
+  .card{
+    top: 150px;
+    margin-bottom: 228px;
+    padding: 50px;
+    background-color: #50858B;
+  }
+
+  .title {
+      margin-bottom: 20px;
+  }
+</style>
