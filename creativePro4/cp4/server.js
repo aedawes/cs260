@@ -91,7 +91,7 @@ app.put("/api/cards/:id", async(req, res) => {
   }
 })
 
-app.listen(3000, () => console.log('Server listening on port 3000!'));
+app.listen(3001, () => console.log('Server listening on port 3001!'));
 
 // const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost:27017/test', {
